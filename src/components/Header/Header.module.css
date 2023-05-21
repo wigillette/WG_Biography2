@@ -1,0 +1,26 @@
+/* Header Styling */
+.header_title {
+    font-family: 'Roboto Slab', serif !important;
+    font-size: 1.5rem !important;
+}
+
+.nav_button {
+    margin-left: 10px;
+}
+
+.nav_button_text {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', serif;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_container {
+    float: right;
+    display: flex;
+}
+  
