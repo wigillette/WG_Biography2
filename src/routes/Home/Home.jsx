@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable require-jsdoc */
-import React from 'react';
 import HomeMedia from '../../components/HomeMedia/HomeMedia';
 import mediaContent from '../../shared/media-content';
 import {Avatar, Card, CardContent, Container,
@@ -41,10 +40,10 @@ function Home() {
       <Divider variant='middle'>RECENT UPDATES</Divider><br/>
       <Grid container spacing={2}>
         {/* <Grid item xs={12} className='row'> */}
-        {mediaContent.map((contentEntry) =>
-          <Grid item md={4} sm={6} xs={8} className='col'>
+        {mediaContent.map((contentEntry, index) =>
+          <Grid item md={4} sm={6} xs={8} className='col' key={index}>
             <HomeMedia title={contentEntry.title}
-              desc={contentEntry.description} img={contentEntry.image}/>
+              desc={contentEntry.description} img={contentEntry.image} />
           </Grid>)}
         {/* </Grid> */}
       </Grid>

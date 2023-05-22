@@ -1,8 +1,8 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
 import {AppBar, Toolbar, Typography, IconButton} from '@mui/material';
-import {Home, Favorite, Work, Folder} from '@mui/icons-material';
 import styles from './Header.module.css';
+import pageTabs from '../../shared/page-tabs';
 
 function Header() {
   return (
@@ -15,25 +15,13 @@ function Header() {
           </Typography>
 
           <div className={styles.button_container}>
-            <IconButton className={styles.nav_button}>
-              <Home/>
-              <span className={styles.nav_button_text}>Overview</span>
-            </IconButton>
-
-            <IconButton className={styles.nav_button}>
-              <Favorite />
-              <span className={styles.nav_button_text}>Aspirations</span>
-            </IconButton>
-
-            <IconButton className={styles.nav_button}>
-              <Work />
-              <span className={styles.nav_button_text}>Portfolio</span>
-            </IconButton>
-
-            <IconButton className={styles.nav_button}>
-              <Folder />
-              <span className={styles.nav_button_text}>Experiences</span>
-            </IconButton>
+            {pageTabs.map((item, index) => (
+              <IconButton key={index} className={styles.nav_button}
+                href={item.url}>
+                {item.icon}
+                <span className={styles.nav_button_text}>{item.text}</span>
+              </IconButton>
+            ))}
           </div>
         </Toolbar>
       </AppBar>
@@ -41,5 +29,4 @@ function Header() {
     </React.Fragment>
   );
 }
-
 export default Header;

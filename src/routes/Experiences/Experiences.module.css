@@ -1,0 +1,21 @@
+.avatar_headshot {
+    margin: 0 auto;
+}
+
+.info_title {
+    font-family: 'Roboto Slab', serif !important;
+    margin-bottom: 1% !important;
+}
+
+.info_body {
+    font-size: 1.2rem !important;
+}
+
+.overview_info {
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+    text-align: center;
+}
+
+.overview_container {
+    margin-top: 2%;
+}
