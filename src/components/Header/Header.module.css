@@ -19,8 +19,6 @@
     justify-content: space-between;
 }
 
-.button_container {
-    float: right;
-    display: flex;
+.appbar {
+    width: 100%;
 }
-  

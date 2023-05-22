@@ -7,7 +7,7 @@ import styles from './Header.module.css';
 function Header() {
   return (
     <React.Fragment>
-      <AppBar position="static" color="primary">
+      <AppBar position="fixed" color="primary" className={styles.appbar}>
         <Toolbar className={styles.toolbar}>
           <Typography variant="h6" component="div"
             className={styles.header_title}>

@@ -17,9 +17,7 @@ function Footer() {
         backgroundColor: darkPrimary,
         padding: '20px',
         textAlign: 'center',
-        position: 'fixed',
         bottom: '0',
-        width: '100%',
       }}
     >
       <Container maxWidth="md">

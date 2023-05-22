@@ -16,11 +16,11 @@ function Home() {
     <Container>
       <div className={styles.overview_container}>
         <Avatar alt="Headshot Image" src={headshot}
-          sx={{width: 400, height: 400}} className={styles.avatar_headshot} />
+          sx={{width: 300, height: 300}} className={styles.avatar_headshot} />
         <br/>
         <Card className={styles.overview_info}>
           <CardContent>
-            <Typography variant='h3' component='div'
+            <Typography variant='h4' component='div'
               className={styles.info_title}>
               WILLIAM GILLETTE BIOGRAPHY
             </Typography>
