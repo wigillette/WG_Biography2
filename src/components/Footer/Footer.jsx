@@ -15,11 +15,9 @@ function Footer() {
       className={styles.footer_container}
       sx={{
         backgroundColor: darkPrimary,
-        paddingY: '20px',
+        padding: '20px',
         textAlign: 'center',
-        position: 'fixed',
-        width: '100%',
-        bottom: '0',
+        marginTop: 'auto',
       }}
     >
       <Container maxWidth="md">
@@ -33,28 +31,28 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook fontSize='medium'/>
+            <Facebook fontSize='large'/>
           </IconButton>
           <IconButton
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedIn fontSize='medium'/>
+            <LinkedIn fontSize='large'/>
           </IconButton>
           <IconButton
             href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <YouTube fontSize='medium'/>
+            <YouTube fontSize='large'/>
           </IconButton>
           <IconButton
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram fontSize='medium'/>
+            <Instagram fontSize='large'/>
           </IconButton>
         </Box>
       </Container>

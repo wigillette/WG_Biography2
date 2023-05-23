@@ -25,7 +25,7 @@ function Header() {
           </div>
         </Toolbar>
       </AppBar>
-      <Toolbar />
+      {/* <Toolbar className={styles.header_margin}/> */}
     </React.Fragment>
   );
 }

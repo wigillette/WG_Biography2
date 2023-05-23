@@ -1,5 +1,7 @@
 .app-wrapper {
-    min-height: 100vh;
-    min-width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100%;
+    min-width: 100%;
     background: linear-gradient(to bottom, #FFC4B2, #FFA699);
 }

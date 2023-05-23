@@ -3,3 +3,47 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: 400 !important;
 }
+
+.aspirations_header {
+    margin-top: 4%;
+    height: 75%;
+}
+
+.horizontal-stepper {
+    margin-bottom: 5%;
+    width: 100%;
+}
+  
+.step-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-label-text {
+    text-align: center;
+}
+
+.step-icon {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.step-icon-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f44336, #ba000d);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-title {
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.step-desc {
+    font-family: 'Open Sans', serif;
+}

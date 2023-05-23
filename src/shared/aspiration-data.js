@@ -1,15 +1,27 @@
 
 /* eslint-disable max-len */
+import {School, Work, SchoolSharp, WorkSharp} from '@mui/icons-material';
+
 const aspirationsData = [
   {
-    title: 'Aspiration 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    label: 'UNIVERSITY',
+    description: 'Earn my Bachelor\'s of Science in Computer Science, Mathematics, and Statistics',
+    icon: <School/>,
   },
   {
-    title: 'Aspiration 2',
-    description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    label: 'INDUSTRY',
+    description: 'Begin working in industry and gain firsthand technical experience',
+    icon: <Work />},
+  {
+    label: 'MASTER',
+    description: 'Pursue higher education and obtain a Master\'s Degree in Data Science',
+    icon: <SchoolSharp />,
   },
-// Add more aspiration objects as needed
+  {
+    label: 'CAREER',
+    description: 'Apply my knowledge and skills to a full-fledged career in Statistics and Data Analytics',
+    icon: <WorkSharp />,
+  },
 ];
 
 export default aspirationsData;

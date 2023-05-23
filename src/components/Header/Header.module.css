@@ -22,3 +22,7 @@
 .appbar {
     width: 100%;
 }
+
+.header_margin {
+    height: 20% !important;
+}
