@@ -2,6 +2,9 @@
 .header_title {
     font-family: 'Roboto Slab', serif !important;
     font-size: 1.5rem !important;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);    
 }
 
 .nav_button {
@@ -12,6 +15,9 @@
     margin-left: 5px;
     font-size: 1.2rem;
     font-family: 'Open Sans', serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  
 }
 
 .toolbar {
@@ -20,7 +26,9 @@
 }
 
 .appbar {
-    width: 100%;
+    width: 100vw !important;
+    left: 0 !important;
+    right: auto !important;
 }
 
 .header_margin {

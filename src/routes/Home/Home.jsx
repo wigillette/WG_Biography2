@@ -21,7 +21,7 @@ function Home() {
           <CardContent>
             <Typography variant='h4' component='div'
               className={styles.info_title}>
-              WILLIAM GILLETTE BIOGRAPHY
+              BIOGRAPHY
             </Typography>
             <Typography variant='body1' color='text.secondary'
               className={styles.info_body}>

@@ -1,9 +1,8 @@
 /* eslint-disable require-jsdoc */
 // import styles from './HomeMedia.module.css';
 import {PropTypes} from 'prop-types';
-import {IconButton, Card, CardActions,
-  CardContent, CardMedia, Typography} from '@mui/material';
-import {Share, TravelExplore} from '@mui/icons-material';
+import {Card, CardContent, CardMedia, Typography} from '@mui/material';
+// import {Share, TravelExplore} from '@mui/icons-material';
 import styles from './HomeMedia.module.css';
 
 function HomeMedia({title, desc, img}) {
@@ -20,7 +19,7 @@ function HomeMedia({title, desc, img}) {
           {desc}
         </Typography>
       </CardContent>
-      <CardActions className={styles.card_actions}>
+      {/* <CardActions className={styles.card_actions}>
         <IconButton aria-label='share' size='small'>
           <Share />
           <span className={styles.card_action_label}>Share</span>
@@ -29,7 +28,7 @@ function HomeMedia({title, desc, img}) {
           <TravelExplore />
           <span className={styles.card_action_label}>Learn More</span>
         </IconButton>
-      </CardActions>
+      </CardActions> */}
     </Card>
   );
 }

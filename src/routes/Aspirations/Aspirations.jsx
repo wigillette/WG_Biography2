@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-key */
 /* eslint-disable require-jsdoc */
 import React from 'react';
@@ -5,14 +6,25 @@ import styles from './Aspirations.module.css';
 import steps from '../../shared/aspiration-data';
 import {Container, Typography} from '@mui/material';
 import {Parallax} from 'react-parallax';
+import {styled} from '@mui/material/styles';
 import PhiKapsBanner from '../../images/PhiKapsBanner.jpg';
 import {Stepper, Step, StepLabel} from '@mui/material';
-import {useTheme} from '@mui/material/styles';
+import StepConnector, {stepConnectorClasses} from '@mui/material/StepConnector';
+
+const ColorlibConnector = styled(StepConnector)(({theme}) => ({
+  [`& .${stepConnectorClasses.line}`]: {
+    height: 4,
+    border: 0,
+    backgroundColor: theme.palette.primary.light,
+    borderRadius: 1,
+    flex: 1,
+  },
+}));
 
 const HorizontalStepper = () => {
   return (
     <div className={styles['horizontal-stepper']}>
-      <Stepper activeStep={1} alternativeLabel>
+      <Stepper activeStep={1} alternativeLabel connector={<ColorlibConnector/>}>
         {steps.map((step, index) => (
           <Step key={index}>
             <StepLabel
@@ -36,8 +48,6 @@ const HorizontalStepper = () => {
 };
 
 function Aspirations() {
-  const theme = useTheme();
-  const textColor = theme.palette.primary.main;
   return (
     <React.Fragment>
       <Parallax
@@ -48,9 +58,8 @@ function Aspirations() {
         className={styles.aspirations_header}
       >
         <div>
-          <Container maxWidth="md">
-            <Typography variant="h2" align="center" color={textColor}
-              sx={{paddingTop: '200px'}}
+          <Container maxWidth="md" sx={{paddingTop: '20%'}}>
+            <Typography variant="h2" align="center" sx={{marginBottom: '10%'}}
               className={styles.aspirations_title}>
                 ASPIRATIONS
             </Typography>

@@ -5,5 +5,7 @@
 }
 
 .footer_container {
-    margin-top: auto;
+    margin-top: 3% !important;
+    width: 98vw !important;
+    padding: 1vw !important
 }

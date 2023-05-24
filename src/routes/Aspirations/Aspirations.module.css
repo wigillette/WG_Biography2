@@ -2,16 +2,18 @@
     font-family: 'Roboto Slab', serif !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: 400 !important;
+    color: #cdcdcd
 }
 
 .aspirations_header {
     margin-top: 4%;
     height: 75%;
+    max-width: 100vw;
 }
 
 .horizontal-stepper {
     margin-bottom: 5%;
-    width: 100%;
+    width: 100vw !important;
 }
   
 .step-label {
@@ -46,4 +48,12 @@
 
 .step-desc {
     font-family: 'Open Sans', serif;
+}
+
+.stepConnector {
+    /* Add your custom styles for the connector here */
+    /* For example, to make the connector wider, you can use the border-width property */
+    border-top-width: 1rem;
+    border-color: #eaeaf0;
+    border-radius: 1px;
 }
